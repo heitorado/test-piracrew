@@ -520,7 +520,7 @@ wheels = [
 
 [[package]]
 name = "crewai"
-version = "0.121.0"
+version = "0.121.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "appdirs" },
@@ -547,9 +547,9 @@ dependencies = [
     { name = "tomli-w" },
     { name = "uv" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/99/ce/229255c1a347d0f1b2c83b94862e660bb1ed156dd9eddfc556b37dcb9e91/crewai-0.121.0.tar.gz", hash = "sha256:5fc6ece92cdf8af760c5bc7c0c26aa70ded497677b8f2b3a857146d7d9d542b5", size = 73069346, upload-time = "2025-05-22T01:17:02.979Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/cc/c6/4099e6bcfd5e7d1106983ff91e5d69b06039b76f2c3df28a369f3aaeaf01/crewai-0.121.1.tar.gz", hash = "sha256:f56020e12e8bb88cc789c2ce819b43a04fb22347a766144d8810035a0be016c5", size = 104299940, upload-time = "2025-05-27T17:46:45.805Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/80/0b/6fe3f8e22c4e799f7d7bf8a90157e22214877c4f8268354a82ea9b05980b/crewai-0.121.0-py3-none-any.whl", hash = "sha256:fa7991f9e8c188fd5c05cece8c0dae7a4c8487b85d1834a60bb74ad0b21c2ed9", size = 318553, upload-time = "2025-05-22T01:16:59.648Z" },
+    { url = "https://files.pythonhosted.org/packages/13/8b/13d04c9153be9509d16489b4b59b74b9271ae8ae512827aa9205ec139529/crewai-0.121.1-py3-none-any.whl", hash = "sha256:8540e97ce53426d833d4b4e32c375cf8115a8a71f0bfa9aac2e940fa92f73b7c", size = 320218, upload-time = "2025-05-27T17:46:41.078Z" },
 ]
 
 [package.optional-dependencies]
@@ -756,7 +756,7 @@ name = "exceptiongroup"
 version = "1.3.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
-    { name = "typing-extensions" },
+    { name = "typing-extensions", marker = "python_full_version < '3.11'" },
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/0b/9f/a65090624ecf468cdca03533906e7c69ed7588582240cfe7cc9e770b50eb/exceptiongroup-1.3.0.tar.gz", hash = "sha256:b241f5885f560bc56a59ee63ca4c6a8bfa46ae4ad651af316d4e81817bb9fd88", size = 29749, upload-time = "2025-05-10T17:42:51.123Z" }
 wheels = [
@@ -3235,7 +3235,7 @@ dependencies = [
 ]
 
 [package.metadata]
-requires-dist = [{ name = "crewai", extras = ["tools"], specifier = ">=0.120.1,<1.0.0" }]
+requires-dist = [{ name = "crewai", extras = ["tools"], specifier = ">=0.121.1,<1.0.0" }]
 
 [[package]]
 name = "tiktoken"
